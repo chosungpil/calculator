@@ -27,6 +27,6 @@ public:
 
 	int getSumSum(const int a, const int b, const int c)
 	{
-		return getSum(a, b) + c;
+		return getSum(getSum(a, b),c);
 	}
 };
