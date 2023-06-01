@@ -22,3 +22,13 @@ TEST(TestCaseName, TestZegop) {
 	Cal* cal = new Cal();
 	EXPECT_EQ(9, cal->getZegop(3));
 }
+
+TEST(TestCaseName, TestGop) {
+	Cal* cal = new Cal();
+	EXPECT_EQ(9, cal->getGop(1, 9));
+}
+
+TEST(TestCaseName, TestSumSum) {
+	Cal* cal = new Cal();
+	EXPECT_EQ(17, cal->getSumSum(1, 9, 7));
+}
