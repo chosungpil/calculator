@@ -2,8 +2,13 @@
 #include "../Project1/cal.cpp"
 TEST(TestCaseName, TestName) {
 	Cal* cal = new Cal();
-    EXPECT_TRUE(cal != nullptr);
+	EXPECT_TRUE(cal != nullptr);
 	delete cal;
+}
+TEST(TestCaseName, TestMinus) {
+	Cal* cal = new Cal();
+	EXPECT_EQ(30, cal->getMinus(100, 70));
+		delete cal;
 }
 
 TEST(TestCaseName, TestDivide) {
