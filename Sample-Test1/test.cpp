@@ -3,6 +3,7 @@
 TEST(TestCaseName, TestName) {
 	Cal* cal = new Cal();
 	EXPECT_TRUE(cal != nullptr);
+	delete cal;
 }
 TEST(TestCaseName, TestMinus) {
 	Cal* cal = new Cal();
